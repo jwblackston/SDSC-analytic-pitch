@@ -1,0 +1,1001 @@
+Age,BMI,ASA_Class,Procedure_Type,Surgery_Duration_Minutes,Estimated_Blood_Loss,Intraoperative_Events,Complication_30d
+56,31.4,2,Lap Chole,58,75,0,0
+44,28.9,2,Lap Chole,77,116,0,0
+70,31.2,2,Appendectomy,65,156,0,0
+60,24,3,Hernia Repair,107,24,1,0
+35,35.6,3,Lap Chole,54,180,0,0
+38,24.3,5,Colectomy,119,233,0,1
+66,22.7,3,Colectomy,72,221,1,0
+60,21.5,2,Lap Chole,59,170,0,0
+73,31.3,2,Hernia Repair,74,47,1,0
+54,25.4,4,Lap Chole,183,37,0,0
+61,25.6,2,Hernia Repair,66,218,1,1
+43,23.2,2,Lap Chole,118,71,0,0
+60,27,1,Lap Chole,49,347,0,0
+78,31.1,3,Lap Chole,192,320,1,0
+60,22.1,1,Colectomy,104,222,0,0
+61,22.5,2,Lap Chole,149,64,0,0
+70,29.1,2,Lap Chole,65,87,0,0
+59,24.4,3,Colectomy,85,115,0,0
+75,26.7,2,Gastrectomy,84,76,0,0
+67,34,3,Gastrectomy,53,30,0,0
+59,21.4,5,Lap Chole,188,71,1,0
+41,35,3,Gastrectomy,71,91,0,0
+60,28.2,1,Colectomy,142,204,1,1
+42,28.9,2,Lap Chole,58,92,0,0
+73,26.6,2,Lap Chole,94,45,0,0
+56,19.7,2,Gastrectomy,109,151,0,0
+60,17.7,5,Colectomy,128,46,0,0
+50,26.5,2,Lap Chole,89,157,0,0
+77,26.2,2,Lap Chole,121,116,0,0
+63,25.9,2,Lap Chole,62,185,0,0
+73,28.9,3,Hernia Repair,155,138,0,0
+70,17.5,2,Colectomy,47,45,0,0
+58,29.5,1,Lap Chole,115,155,0,0
+52,32.4,3,Lap Chole,86,212,0,0
+61,36.1,4,Lap Chole,125,15,0,0
+90,26.5,3,Lap Chole,63,134,0,0
+30,39.3,2,Appendectomy,56,212,1,0
+87,27.5,3,Colectomy,56,82,0,0
+75,20.1,2,Colectomy,124,149,0,0
+45,28,5,Hernia Repair,77,78,0,0
+79,28.3,3,Hernia Repair,65,186,0,0
+67,28.5,3,Appendectomy,70,62,0,0
+33,22.4,3,Appendectomy,78,242,0,0
+73,31.6,4,Appendectomy,150,76,1,1
+66,29.1,4,Hernia Repair,44,147,0,0
+66,24.5,3,Gastrectomy,97,65,0,0
+45,28,1,Colectomy,166,78,0,0
+33,22.7,3,Colectomy,136,84,0,0
+47,29,3,Lap Chole,95,13,0,0
+41,25,3,Hernia Repair,78,219,0,0
+44,21.8,3,Gastrectomy,102,35,0,0
+72,32.1,5,Lap Chole,101,111,0,0
+54,25.9,2,Colectomy,79,47,0,0
+59,28.7,3,Appendectomy,103,136,0,0
+81,29.5,2,Hernia Repair,66,87,0,0
+65,28.8,3,Lap Chole,113,34,1,0
+56,31.5,3,Colectomy,152,325,0,0
+87,24.4,2,Hernia Repair,114,153,0,0
+65,26.8,4,Lap Chole,119,99,0,0
+59,21.9,3,Lap Chole,83,126,0,0
+90,28.2,3,Colectomy,54,85,0,0
+64,30.4,4,Hernia Repair,127,81,0,0
+60,34.7,1,Colectomy,102,264,0,0
+57,25.9,2,Hernia Repair,78,82,0,0
+55,21.9,5,Gastrectomy,57,51,0,0
+47,27.3,3,Hernia Repair,81,76,1,1
+43,33.8,4,Hernia Repair,69,77,0,0
+79,23.4,5,Colectomy,79,65,0,0
+58,25,3,Hernia Repair,75,77,0,0
+78,31,3,Colectomy,47,87,0,0
+59,18.2,3,Lap Chole,63,520,0,0
+47,27.3,1,Appendectomy,120,122,1,0
+75,20.9,3,Colectomy,110,241,0,0
+57,22.8,5,Hernia Repair,52,184,0,0
+57,21.9,3,Lap Chole,61,189,0,0
+60,33.9,3,Lap Chole,69,44,1,0
+59,31.6,1,Hernia Repair,70,104,0,0
+60,29.8,3,Hernia Repair,141,20,1,0
+59,27.2,2,Lap Chole,222,35,0,0
+64,31.7,4,Hernia Repair,87,182,0,0
+39,32.6,3,Hernia Repair,32,85,0,0
+56,28.8,2,Colectomy,123,65,0,0
+47,34.4,2,Colectomy,85,187,1,0
+61,21.7,3,Lap Chole,88,100,0,0
+29,21,1,Colectomy,62,118,0,0
+84,26.5,4,Gastrectomy,87,31,0,0
+68,20.2,1,Appendectomy,84,61,0,1
+88,31.6,4,Lap Chole,97,64,0,0
+61,30.1,3,Lap Chole,64,102,1,0
+50,31.6,3,Hernia Repair,138,46,0,0
+60,25.3,3,Gastrectomy,85,223,0,0
+75,28.2,3,Lap Chole,82,79,0,0
+55,29.2,2,Appendectomy,129,661,0,0
+44,28.7,3,Hernia Repair,147,86,0,0
+58,29.7,3,Lap Chole,79,83,0,0
+67,30,3,Appendectomy,130,106,0,0
+36,29.8,2,Appendectomy,144,122,0,0
+81,25.6,2,Gastrectomy,84,179,0,0
+67,25.4,3,Hernia Repair,72,103,0,0
+60,20,5,Colectomy,126,99,0,0
+75,15,2,Colectomy,68,38,0,0
+55,31.1,3,Lap Chole,175,53,0,0
+72,29.2,1,Lap Chole,107,99,0,0
+43,36.6,2,Colectomy,53,22,1,0
+41,33.1,2,Lap Chole,91,61,1,0
+46,25.5,3,Lap Chole,202,122,0,0
+68,26.4,4,Colectomy,41,183,0,0
+70,27.5,3,Appendectomy,107,86,0,0
+53,29.6,4,Colectomy,62,258,0,0
+58,38.9,3,Hernia Repair,77,164,0,0
+59,27.1,2,Gastrectomy,59,24,0,0
+58,19.6,3,Hernia Repair,54,110,0,0
+71,25.6,4,Colectomy,89,133,0,0
+46,25,4,Colectomy,70,38,0,0
+57,29.5,3,Hernia Repair,212,70,1,0
+77,33.4,2,Appendectomy,43,85,0,0
+81,30,2,Lap Chole,49,63,1,0
+77,27.7,3,Colectomy,178,45,0,0
+71,29.6,5,Appendectomy,176,293,0,0
+61,25.6,3,Colectomy,71,166,0,0
+83,35.8,2,Gastrectomy,115,98,0,1
+36,22.5,1,Lap Chole,62,59,0,0
+55,18.8,3,Gastrectomy,60,287,0,0
+62,29.5,3,Hernia Repair,112,104,0,0
+74,27.6,2,Lap Chole,68,79,0,0
+55,29.2,2,Colectomy,103,26,0,0
+90,31.2,2,Appendectomy,80,50,0,0
+57,23.6,5,Lap Chole,84,573,0,0
+41,31.7,4,Gastrectomy,143,61,1,0
+63,21.8,1,Colectomy,118,193,0,0
+56,20.1,2,Gastrectomy,90,64,1,0
+22,30.2,2,Gastrectomy,57,116,0,0
+48,24,3,Gastrectomy,77,180,0,0
+61,32.1,2,Appendectomy,47,70,0,0
+46,24.3,2,Appendectomy,70,277,0,0
+49,32.1,3,Hernia Repair,145,86,0,0
+59,27.2,2,Appendectomy,89,188,1,0
+35,26.1,2,Appendectomy,104,11,0,0
+69,30,5,Hernia Repair,65,83,0,1
+84,31,3,Colectomy,60,165,0,0
+62,32.8,2,Lap Chole,165,136,1,1
+74,21.7,1,Colectomy,63,95,1,0
+83,20.3,3,Hernia Repair,97,301,0,1
+59,23.5,4,Gastrectomy,55,372,1,1
+68,31.8,3,Colectomy,102,113,0,0
+45,28.4,2,Lap Chole,149,127,1,0
+74,22,5,Hernia Repair,87,238,0,1
+37,29.5,2,Appendectomy,95,46,0,0
+54,19.9,4,Appendectomy,104,165,1,0
+58,20.9,4,Lap Chole,86,86,0,0
+63,30.5,4,Hernia Repair,76,142,0,0
+52,35.4,2,Colectomy,134,422,0,0
+61,37.1,2,Lap Chole,78,310,0,0
+44,25.7,2,Colectomy,58,60,0,0
+50,18.1,3,Appendectomy,78,169,0,0
+60,26.3,3,Appendectomy,98,54,0,1
+75,27.4,2,Lap Chole,131,211,0,0
+30,28.5,4,Lap Chole,190,193,1,0
+26,27.9,4,Hernia Repair,66,133,0,0
+56,22.7,4,Appendectomy,72,34,0,1
+34,27.1,2,Lap Chole,94,364,0,0
+44,32.1,2,Lap Chole,82,37,0,0
+74,27,3,Colectomy,111,106,0,0
+71,30,2,Colectomy,68,30,0,0
+34,26.1,3,Colectomy,84,52,0,0
+58,30.7,2,Hernia Repair,65,332,1,0
+44,26.8,2,Lap Chole,94,122,0,0
+63,28,3,Lap Chole,124,117,1,1
+75,24.5,4,Gastrectomy,114,107,0,0
+76,19.5,2,Lap Chole,67,75,0,1
+42,18.1,2,Lap Chole,72,187,1,0
+52,27.4,3,Lap Chole,54,156,0,0
+58,21.7,4,Hernia Repair,94,59,0,0
+40,29.9,4,Colectomy,98,173,0,0
+54,26.2,3,Colectomy,76,103,1,0
+79,20.9,3,Lap Chole,132,105,0,0
+37,25.9,4,Gastrectomy,88,66,0,0
+59,28.9,1,Hernia Repair,44,89,0,0
+57,29.4,4,Lap Chole,122,130,0,0
+30,35.9,4,Hernia Repair,91,116,0,0
+58,33.1,2,Lap Chole,120,37,1,0
+54,19.6,3,Lap Chole,87,209,0,0
+45,31.7,1,Gastrectomy,76,117,1,0
+52,23.7,3,Appendectomy,88,173,0,0
+59,27.9,5,Colectomy,71,94,0,0
+54,27.9,4,Lap Chole,141,23,0,0
+75,23.6,3,Gastrectomy,117,193,0,0
+60,25.7,3,Colectomy,48,36,0,0
+72,31.3,4,Lap Chole,67,210,0,0
+61,28.1,2,Appendectomy,87,122,0,0
+51,23.7,4,Lap Chole,73,41,0,0
+90,23.8,4,Colectomy,100,334,0,0
+51,24.4,2,Hernia Repair,86,232,0,0
+59,29.3,2,Gastrectomy,63,73,0,0
+74,34.1,2,Lap Chole,87,140,0,0
+65,25.1,1,Colectomy,61,67,0,0
+59,31.9,3,Lap Chole,104,196,0,0
+60,27,3,Colectomy,151,66,0,0
+67,31.2,4,Appendectomy,102,82,0,0
+90,25.1,2,Colectomy,32,218,0,0
+60,23.5,2,Gastrectomy,103,160,1,0
+68,21.9,2,Lap Chole,84,52,0,0
+58,27.4,2,Colectomy,74,61,0,0
+27,29.2,2,Colectomy,128,102,0,0
+59,31.7,5,Colectomy,146,81,0,0
+73,27.9,2,Lap Chole,86,73,0,0
+47,25.7,2,Colectomy,81,80,1,0
+42,20.2,2,Colectomy,81,147,0,0
+50,26.5,3,Lap Chole,27,63,0,0
+74,28,4,Lap Chole,132,89,0,0
+70,29.3,3,Gastrectomy,150,100,0,0
+42,25.8,5,Hernia Repair,123,47,0,0
+55,31.3,2,Lap Chole,88,101,0,0
+48,25.9,2,Colectomy,69,107,0,0
+62,31.2,3,Gastrectomy,79,61,0,0
+49,21.7,3,Colectomy,81,37,0,0
+65,17.7,2,Appendectomy,123,49,0,0
+67,26.6,2,Colectomy,76,200,0,0
+77,32.3,4,Colectomy,82,110,0,0
+52,29.1,1,Hernia Repair,81,220,0,0
+79,29.1,3,Lap Chole,112,71,0,0
+80,34.1,2,Hernia Repair,186,29,0,0
+66,24.7,3,Lap Chole,140,223,0,0
+86,26.3,2,Colectomy,125,241,0,0
+90,28.8,1,Colectomy,97,46,0,0
+34,23.7,2,Appendectomy,90,80,0,0
+90,31,2,Colectomy,70,69,1,0
+86,30.7,3,Hernia Repair,105,68,1,0
+49,36.7,2,Hernia Repair,36,440,0,0
+49,30.8,2,Lap Chole,109,173,0,0
+64,23.8,2,Hernia Repair,131,48,0,0
+59,24.6,3,Hernia Repair,86,38,0,0
+73,26.5,5,Colectomy,55,128,0,0
+74,27.3,2,Appendectomy,157,85,1,0
+58,27.5,2,Colectomy,76,93,0,0
+71,16.6,2,Lap Chole,86,168,1,0
+54,27.7,4,Lap Chole,168,98,0,0
+65,21.6,4,Lap Chole,95,272,0,0
+51,29.1,3,Lap Chole,149,76,0,0
+76,21,2,Colectomy,67,76,0,0
+24,35.5,2,Lap Chole,130,228,0,0
+39,29.6,3,Gastrectomy,136,175,0,0
+67,17.9,2,Lap Chole,75,257,0,0
+47,21.2,3,Colectomy,67,135,0,0
+40,24.8,4,Gastrectomy,144,264,0,0
+68,24.8,2,Hernia Repair,76,30,0,0
+80,29.1,3,Hernia Repair,148,39,0,1
+66,23.9,2,Lap Chole,89,131,0,0
+80,17.5,3,Appendectomy,64,203,0,0
+82,27.6,4,Lap Chole,34,58,0,0
+63,22.4,2,Hernia Repair,81,67,0,0
+52,29.4,3,Lap Chole,69,110,0,1
+47,21.2,3,Hernia Repair,110,367,1,0
+49,18.3,3,Lap Chole,66,88,0,0
+63,16.6,2,Colectomy,143,188,0,0
+50,30.4,1,Lap Chole,185,51,0,1
+40,37.5,3,Colectomy,78,114,0,0
+43,30.9,4,Appendectomy,90,212,1,0
+61,28.7,3,Lap Chole,69,41,0,0
+54,28.8,4,Colectomy,86,189,0,0
+73,26.4,3,Appendectomy,111,52,0,0
+51,28.3,2,Lap Chole,102,109,0,0
+55,27.6,4,Lap Chole,58,138,0,1
+69,27.9,3,Lap Chole,49,147,0,0
+46,25.4,2,Lap Chole,95,317,0,0
+67,31.6,1,Lap Chole,78,49,0,0
+80,23.7,5,Gastrectomy,89,147,1,1
+73,16.3,1,Lap Chole,87,53,0,0
+75,19.1,5,Lap Chole,135,136,0,0
+54,25.4,4,Colectomy,60,63,0,0
+72,33.7,3,Hernia Repair,98,73,0,0
+57,19.9,2,Colectomy,48,66,1,0
+55,27.4,1,Appendectomy,138,125,0,0
+81,19.5,5,Hernia Repair,104,161,0,0
+47,19.5,2,Appendectomy,167,81,0,0
+52,20,2,Colectomy,231,82,0,0
+62,21.4,3,Lap Chole,71,198,0,0
+64,30.9,1,Gastrectomy,70,136,0,0
+90,28.8,3,Hernia Repair,58,220,1,0
+88,19.5,1,Lap Chole,68,149,0,0
+74,29.5,3,Colectomy,103,159,0,0
+35,26.4,1,Colectomy,59,42,0,0
+63,22.8,3,Gastrectomy,120,80,0,0
+68,36.6,3,Lap Chole,183,422,0,1
+56,28.6,3,Hernia Repair,61,60,0,0
+67,27.1,3,Colectomy,110,93,1,0
+47,32.4,2,Hernia Repair,97,110,1,0
+57,31.3,2,Lap Chole,184,65,1,0
+39,28.5,4,Colectomy,77,170,1,0
+43,21.5,1,Colectomy,99,109,0,1
+77,20.1,2,Hernia Repair,96,62,0,0
+76,32.6,1,Gastrectomy,37,202,0,0
+72,31.6,4,Gastrectomy,121,80,0,1
+51,15.6,1,Colectomy,90,154,1,0
+79,23.8,1,Lap Chole,49,130,0,0
+46,27.4,3,Colectomy,75,59,0,0
+48,36.5,3,Hernia Repair,58,42,0,0
+66,23,2,Colectomy,42,77,0,0
+69,30.3,3,Colectomy,87,122,0,0
+72,29.2,2,Colectomy,74,202,0,0
+57,23.6,4,Appendectomy,256,96,0,0
+54,30.6,2,Colectomy,69,118,0,0
+59,30.9,3,Lap Chole,97,273,0,0
+50,28.4,2,Appendectomy,119,32,0,0
+45,23.9,2,Lap Chole,82,430,0,0
+36,31.5,3,Appendectomy,56,44,0,0
+55,32.5,2,Lap Chole,85,58,0,0
+52,27.3,5,Colectomy,67,88,1,0
+62,31.9,3,Hernia Repair,103,243,0,0
+52,22.9,1,Colectomy,118,73,0,0
+76,31.5,2,Hernia Repair,89,425,0,1
+58,24.6,3,Hernia Repair,189,35,0,0
+90,35.6,4,Lap Chole,72,43,0,0
+90,27.9,1,Lap Chole,96,122,0,0
+43,21.1,4,Colectomy,97,56,1,0
+78,26,2,Hernia Repair,36,128,0,0
+74,37.1,4,Lap Chole,38,72,0,0
+54,26.2,2,Lap Chole,119,298,0,0
+55,27.2,1,Lap Chole,143,179,0,0
+55,28.2,3,Lap Chole,124,159,0,0
+54,32,2,Appendectomy,173,135,0,0
+52,26.3,2,Gastrectomy,54,53,0,0
+63,24.8,5,Colectomy,106,69,0,1
+49,30.2,3,Lap Chole,80,126,0,0
+67,15,3,Lap Chole,147,37,1,1
+59,30.6,4,Lap Chole,89,42,0,0
+83,32.1,3,Colectomy,50,41,1,0
+51,19.8,2,Lap Chole,70,117,0,0
+51,27,4,Lap Chole,148,218,0,0
+59,27.8,4,Gastrectomy,209,251,0,0
+67,24.3,1,Appendectomy,142,152,0,0
+54,21.2,4,Lap Chole,66,68,0,0
+52,32.4,2,Colectomy,64,39,0,0
+48,28.2,5,Lap Chole,76,58,0,0
+45,27.9,2,Colectomy,116,93,0,0
+38,30.5,4,Lap Chole,92,107,0,0
+70,36.5,1,Appendectomy,124,115,0,1
+51,29,3,Hernia Repair,90,170,0,0
+90,27.7,4,Colectomy,80,422,0,0
+58,33.3,3,Lap Chole,138,56,0,0
+62,32.7,2,Colectomy,69,34,0,0
+42,16.5,4,Colectomy,124,77,0,0
+58,24.7,3,Hernia Repair,70,198,0,0
+68,25.2,2,Lap Chole,60,27,0,0
+62,22.8,4,Colectomy,124,130,0,0
+72,30.2,3,Lap Chole,149,180,0,0
+58,20,2,Colectomy,49,69,0,0
+86,22.3,3,Hernia Repair,68,302,0,0
+80,27.6,3,Colectomy,158,80,0,0
+43,30.6,2,Lap Chole,40,183,0,0
+45,29.8,4,Colectomy,178,47,0,0
+35,21.6,3,Lap Chole,105,135,0,0
+30,30.4,3,Hernia Repair,46,81,0,0
+37,28.3,3,Hernia Repair,105,96,1,0
+81,16.8,3,Hernia Repair,109,131,0,0
+55,18.7,2,Lap Chole,99,420,1,0
+69,24.5,1,Colectomy,80,115,0,0
+59,23.5,4,Lap Chole,151,29,0,0
+46,33,2,Lap Chole,70,51,0,0
+81,26.9,2,Lap Chole,88,108,0,0
+55,30.3,3,Hernia Repair,132,80,0,0
+46,25.7,3,Colectomy,88,117,0,0
+90,29.2,1,Appendectomy,83,376,1,1
+52,32,3,Lap Chole,109,138,0,0
+66,19.1,3,Colectomy,145,60,0,0
+75,26.3,1,Lap Chole,91,106,0,0
+65,30.2,3,Lap Chole,235,920,0,0
+52,23,2,Appendectomy,74,632,0,0
+54,16.7,1,Lap Chole,149,164,0,0
+63,30.1,1,Colectomy,59,108,1,0
+79,32,3,Colectomy,100,84,0,0
+69,25.3,5,Lap Chole,121,140,0,0
+85,31,2,Colectomy,53,62,1,0
+64,22.1,3,Lap Chole,69,38,0,0
+78,22.5,4,Gastrectomy,169,305,0,0
+49,23.9,3,Colectomy,97,49,1,0
+36,35.5,5,Appendectomy,89,73,0,0
+45,30.2,3,Appendectomy,89,94,0,0
+49,21.4,4,Appendectomy,68,125,0,0
+53,29.6,1,Colectomy,155,91,0,0
+45,28.2,2,Gastrectomy,77,22,1,0
+54,33.3,3,Appendectomy,44,105,0,0
+32,27.2,2,Colectomy,148,68,0,0
+55,27.5,3,Colectomy,80,171,0,0
+58,27.4,2,Hernia Repair,109,886,0,0
+65,25.8,2,Colectomy,86,93,0,1
+56,31.4,2,Hernia Repair,183,59,0,0
+81,26.2,1,Appendectomy,122,119,0,0
+72,21.2,2,Lap Chole,58,131,0,0
+69,25.1,2,Lap Chole,133,386,0,0
+75,22.6,4,Appendectomy,49,55,0,0
+47,23.1,2,Lap Chole,68,77,0,0
+76,24.3,1,Lap Chole,71,57,0,0
+60,21.5,2,Colectomy,139,208,0,0
+52,30.7,5,Lap Chole,77,111,0,0
+80,22.7,3,Hernia Repair,90,47,0,0
+52,36.2,4,Gastrectomy,118,53,1,0
+49,28.7,4,Lap Chole,71,172,0,0
+78,31.3,2,Appendectomy,54,209,0,0
+54,20.3,2,Colectomy,74,100,0,0
+64,31.6,3,Appendectomy,83,83,0,0
+58,28.4,3,Appendectomy,86,107,1,0
+58,27.3,2,Hernia Repair,94,106,1,0
+55,30.3,3,Hernia Repair,110,96,0,0
+61,32.1,3,Colectomy,81,171,1,0
+63,26.2,3,Hernia Repair,129,130,0,1
+73,23.8,2,Colectomy,53,133,0,0
+50,21.4,2,Hernia Repair,78,66,1,0
+57,33.7,2,Gastrectomy,141,59,1,0
+38,23.6,4,Colectomy,83,104,0,0
+51,25.2,3,Appendectomy,179,126,0,0
+64,29.5,3,Appendectomy,111,83,1,0
+65,23.5,3,Hernia Repair,80,276,1,0
+55,34.1,2,Hernia Repair,131,60,1,0
+60,24.3,4,Lap Chole,97,73,0,0
+55,26.3,2,Hernia Repair,64,173,0,0
+54,23.6,2,Lap Chole,100,144,0,0
+69,18,3,Gastrectomy,57,93,0,0
+56,36.6,3,Colectomy,208,59,1,0
+46,21.9,2,Gastrectomy,74,34,0,0
+74,31.1,3,Colectomy,60,185,0,0
+52,26.3,1,Hernia Repair,114,43,0,0
+67,30.6,4,Appendectomy,51,136,0,0
+56,21.8,1,Appendectomy,131,136,0,0
+61,23.7,2,Appendectomy,71,40,0,0
+73,29.3,4,Hernia Repair,58,114,0,0
+58,32.2,3,Colectomy,55,115,0,0
+64,22.1,4,Hernia Repair,98,126,0,0
+26,29.2,2,Colectomy,121,32,0,0
+58,29.5,2,Colectomy,109,155,0,0
+56,21.1,3,Lap Chole,107,54,0,0
+65,27.9,4,Lap Chole,246,69,1,0
+65,31.4,3,Colectomy,62,148,0,0
+52,25.6,3,Lap Chole,110,89,0,0
+86,18.8,2,Lap Chole,68,160,0,1
+51,37.1,4,Gastrectomy,110,106,0,0
+56,31.9,3,Hernia Repair,86,378,1,1
+60,25.7,2,Lap Chole,123,27,0,0
+50,24,4,Gastrectomy,78,54,0,0
+34,31,2,Colectomy,85,86,0,0
+81,28.2,4,Hernia Repair,121,59,0,1
+48,24.1,2,Colectomy,77,41,0,0
+56,29.1,3,Colectomy,108,116,0,0
+56,31,4,Hernia Repair,129,204,0,0
+58,28.4,2,Colectomy,80,134,0,0
+35,26.8,2,Colectomy,69,112,0,0
+58,22.3,4,Lap Chole,129,92,0,0
+38,25.6,3,Appendectomy,108,54,0,0
+75,19.6,3,Hernia Repair,116,199,1,1
+69,16.4,1,Lap Chole,84,401,0,0
+43,27,3,Lap Chole,54,245,0,0
+76,24.3,2,Hernia Repair,59,296,0,0
+58,32.6,5,Hernia Repair,49,126,0,0
+39,26.6,3,Appendectomy,82,133,0,0
+57,28.3,2,Hernia Repair,43,61,0,0
+51,22.6,2,Colectomy,162,34,0,0
+59,30.3,2,Appendectomy,124,176,0,0
+46,23.1,3,Lap Chole,92,94,0,0
+66,29.8,4,Hernia Repair,56,67,0,0
+55,25.6,3,Colectomy,149,83,1,0
+43,28.2,3,Colectomy,151,218,0,1
+55,31.2,3,Lap Chole,81,31,0,0
+67,28.6,2,Appendectomy,137,66,0,0
+53,25.2,5,Colectomy,45,100,1,0
+63,22.8,4,Colectomy,85,51,1,0
+29,22.2,3,Colectomy,122,355,0,0
+52,22.2,3,Colectomy,141,49,0,0
+57,25.1,3,Colectomy,105,91,0,0
+53,23.2,3,Lap Chole,178,171,0,0
+68,30.5,3,Lap Chole,110,186,0,0
+67,26.9,3,Appendectomy,80,75,0,0
+50,24,4,Colectomy,92,108,1,0
+49,25,3,Lap Chole,54,65,1,0
+61,26.7,2,Colectomy,91,50,0,1
+51,33.5,3,Colectomy,73,103,0,0
+59,21.4,2,Lap Chole,97,194,0,0
+63,22.5,2,Hernia Repair,85,178,0,0
+63,26.6,4,Lap Chole,32,343,0,0
+81,15.2,2,Gastrectomy,63,191,0,0
+66,18.9,3,Lap Chole,80,131,1,0
+44,20,4,Appendectomy,141,91,0,0
+72,27,4,Hernia Repair,49,131,1,0
+69,28.2,2,Lap Chole,119,102,0,0
+77,36.4,5,Lap Chole,73,215,0,1
+53,33.1,1,Lap Chole,80,153,0,0
+72,25.9,1,Appendectomy,118,22,0,0
+43,28.3,2,Colectomy,123,100,0,0
+85,37.5,2,Hernia Repair,71,51,0,0
+36,23.9,2,Lap Chole,139,67,1,0
+44,33,2,Hernia Repair,47,146,0,0
+64,22.3,3,Hernia Repair,119,47,0,0
+80,26.6,3,Hernia Repair,70,99,0,0
+38,19,2,Lap Chole,81,99,0,0
+49,36.7,2,Lap Chole,239,254,1,1
+72,32.6,1,Lap Chole,153,80,0,0
+70,25.2,4,Colectomy,107,39,0,0
+52,25.1,2,Hernia Repair,42,108,1,0
+64,24.8,2,Hernia Repair,180,111,0,0
+58,32.3,2,Lap Chole,99,101,0,1
+62,31.4,4,Lap Chole,183,87,1,1
+86,30.8,2,Colectomy,131,175,0,0
+64,22.3,1,Gastrectomy,139,38,0,0
+66,31.1,3,Lap Chole,122,62,0,0
+65,25.3,4,Colectomy,50,54,1,1
+79,31.2,4,Lap Chole,73,133,1,0
+79,28.1,2,Colectomy,77,115,0,0
+61,31.4,3,Hernia Repair,110,53,0,0
+30,26,3,Appendectomy,106,141,0,0
+73,31.5,2,Hernia Repair,92,327,0,0
+43,31.9,2,Lap Chole,105,32,0,0
+58,36.4,3,Lap Chole,51,292,0,0
+45,36.8,5,Appendectomy,81,80,0,0
+65,27.2,5,Appendectomy,70,47,0,0
+61,32.7,4,Colectomy,154,206,0,0
+61,21.8,2,Colectomy,149,152,0,0
+36,16.2,3,Colectomy,97,71,0,0
+86,28.3,5,Lap Chole,70,107,0,0
+40,24.7,4,Colectomy,96,91,1,0
+73,25.9,3,Colectomy,80,98,1,0
+56,27.1,2,Appendectomy,62,242,0,0
+46,32,3,Colectomy,142,180,0,0
+83,23.8,4,Lap Chole,110,60,1,0
+51,22.1,4,Lap Chole,181,68,0,0
+75,28.9,3,Hernia Repair,80,36,0,0
+64,30.4,3,Gastrectomy,105,44,1,0
+33,32.6,2,Hernia Repair,152,85,0,0
+45,25.2,3,Hernia Repair,38,112,0,0
+55,26,4,Colectomy,78,216,0,1
+58,20.6,2,Appendectomy,86,44,0,0
+52,22.3,2,Hernia Repair,106,238,0,0
+80,26.1,1,Gastrectomy,96,49,1,0
+49,31,1,Lap Chole,64,76,0,0
+68,30.8,2,Hernia Repair,59,98,0,0
+56,25.7,2,Colectomy,66,185,0,0
+71,24.7,3,Lap Chole,135,54,0,0
+49,25.6,2,Hernia Repair,47,30,1,0
+64,31.8,3,Gastrectomy,118,231,0,0
+73,31.7,2,Lap Chole,145,201,0,0
+52,34.5,4,Lap Chole,91,216,1,0
+88,25.8,3,Colectomy,136,153,0,1
+70,31.4,3,Gastrectomy,75,148,0,0
+82,31.6,2,Gastrectomy,45,144,0,0
+63,18.6,4,Hernia Repair,42,70,0,0
+59,31.7,2,Appendectomy,48,55,0,0
+33,23.8,2,Colectomy,115,83,0,0
+74,28.3,4,Lap Chole,152,80,0,0
+50,20.4,4,Hernia Repair,125,100,0,0
+64,25.9,3,Lap Chole,105,96,0,0
+87,19.8,2,Colectomy,80,66,0,0
+77,18.9,3,Colectomy,82,83,0,0
+64,28.4,2,Appendectomy,112,85,0,0
+76,28.2,3,Lap Chole,132,65,0,0
+42,37.9,3,Hernia Repair,79,195,0,0
+41,24.9,4,Gastrectomy,100,77,0,0
+74,31.7,4,Appendectomy,78,108,0,0
+50,22.8,3,Lap Chole,62,74,1,0
+58,24.1,3,Lap Chole,88,84,0,0
+66,34.1,3,Lap Chole,150,75,0,0
+69,17,3,Appendectomy,99,76,0,0
+57,31.4,3,Lap Chole,85,121,1,0
+67,33.2,1,Lap Chole,122,137,0,0
+65,37.8,4,Lap Chole,45,264,1,0
+69,33.6,3,Appendectomy,173,112,0,1
+54,32.8,4,Hernia Repair,163,75,0,0
+69,21.8,3,Appendectomy,136,86,0,0
+50,33.7,1,Colectomy,82,55,0,1
+81,29.9,5,Hernia Repair,80,24,0,1
+59,27.9,3,Colectomy,118,65,0,0
+65,26.2,4,Lap Chole,66,38,0,0
+61,22,2,Appendectomy,111,62,0,0
+75,32.3,3,Hernia Repair,96,163,0,0
+38,24.9,2,Lap Chole,81,82,0,0
+58,26.3,3,Colectomy,136,57,0,0
+67,16.2,3,Colectomy,175,45,0,0
+65,30.6,4,Lap Chole,173,34,0,0
+62,23.9,3,Colectomy,181,252,1,0
+74,24.4,2,Lap Chole,121,89,0,0
+59,31.4,2,Colectomy,36,200,0,0
+54,29,3,Hernia Repair,34,74,0,0
+62,31.8,3,Hernia Repair,154,38,0,0
+35,28,1,Lap Chole,127,87,0,0
+87,33.2,4,Hernia Repair,409,80,0,0
+55,27.4,3,Lap Chole,76,64,0,0
+67,27.9,4,Appendectomy,73,91,0,0
+62,19.8,3,Lap Chole,156,273,0,0
+76,23.8,3,Gastrectomy,92,115,0,0
+57,17.3,3,Colectomy,153,80,0,0
+46,27.9,2,Colectomy,57,755,0,0
+53,29.4,4,Lap Chole,138,94,0,0
+52,25.9,4,Gastrectomy,62,43,0,0
+71,20.2,2,Lap Chole,99,207,0,0
+63,15,3,Lap Chole,106,52,0,0
+41,24.1,1,Hernia Repair,65,45,0,0
+79,33.3,2,Colectomy,242,320,0,0
+66,21.9,2,Colectomy,85,367,0,0
+36,27.6,3,Hernia Repair,103,62,0,0
+69,24.4,4,Lap Chole,104,89,0,0
+74,30.6,3,Appendectomy,96,98,0,0
+69,20.9,2,Hernia Repair,66,75,0,0
+58,30,3,Lap Chole,87,128,0,0
+53,21.9,3,Colectomy,122,145,1,0
+86,39.4,2,Gastrectomy,90,36,0,1
+51,28.9,2,Gastrectomy,44,74,0,0
+59,27.2,2,Hernia Repair,116,67,0,0
+48,28.9,2,Colectomy,74,67,0,0
+70,28,3,Lap Chole,130,86,0,0
+38,21.2,2,Lap Chole,32,69,0,0
+52,32,1,Lap Chole,80,68,0,0
+57,30.3,2,Colectomy,129,116,1,0
+49,29.5,3,Gastrectomy,74,33,0,0
+75,24.2,3,Colectomy,41,229,0,0
+75,34.5,3,Gastrectomy,78,136,0,0
+33,27.4,4,Hernia Repair,131,130,0,0
+62,29.1,2,Appendectomy,81,200,0,0
+79,25.2,3,Colectomy,35,92,0,0
+77,29.7,4,Colectomy,110,218,0,0
+53,28.4,1,Lap Chole,82,184,0,0
+56,22.1,3,Appendectomy,120,63,0,0
+33,33.1,2,Gastrectomy,70,138,0,0
+62,30.7,3,Lap Chole,66,90,0,0
+62,37,3,Lap Chole,60,79,0,0
+63,22.7,2,Hernia Repair,92,91,0,0
+45,28.4,3,Lap Chole,81,106,1,0
+82,23,4,Colectomy,88,83,0,0
+31,23.6,3,Gastrectomy,147,293,0,0
+69,21.2,3,Appendectomy,105,324,0,0
+59,22.5,1,Lap Chole,47,133,0,0
+75,34,3,Lap Chole,142,154,0,0
+57,24,4,Hernia Repair,49,57,0,0
+31,21.9,3,Appendectomy,65,32,0,0
+42,28.7,3,Hernia Repair,100,61,0,0
+29,23.2,4,Hernia Repair,97,160,0,0
+65,25.1,4,Lap Chole,122,179,0,0
+60,22.2,2,Appendectomy,111,153,0,0
+77,31.8,5,Colectomy,95,40,0,0
+62,30.2,3,Appendectomy,90,48,0,1
+47,15,3,Colectomy,122,177,0,0
+57,30.5,3,Colectomy,83,171,0,0
+77,31.8,1,Appendectomy,53,184,0,0
+34,22.2,2,Colectomy,128,163,0,0
+35,32.6,3,Colectomy,57,506,0,0
+72,27.6,3,Lap Chole,80,46,1,0
+67,18.7,3,Lap Chole,100,124,0,0
+75,24.8,3,Lap Chole,104,47,0,1
+56,19.9,2,Colectomy,62,174,0,0
+66,25.8,3,Gastrectomy,54,47,1,0
+73,26.2,3,Colectomy,58,45,0,0
+67,28.9,2,Hernia Repair,92,77,1,0
+77,33.7,2,Lap Chole,97,77,0,0
+67,24.3,3,Hernia Repair,80,305,0,0
+59,28.8,3,Lap Chole,89,70,0,0
+42,33.1,2,Colectomy,80,36,1,0
+62,25.4,2,Gastrectomy,114,141,0,1
+64,22.9,4,Lap Chole,71,52,0,0
+40,30,3,Colectomy,58,93,0,0
+77,26.9,2,Colectomy,87,39,0,0
+62,30.3,3,Colectomy,100,38,0,0
+48,24.6,3,Colectomy,86,110,0,0
+49,17.2,3,Colectomy,41,48,0,0
+59,34.6,3,Colectomy,98,81,0,0
+67,29.2,5,Lap Chole,76,55,0,0
+67,20.3,2,Colectomy,188,67,0,0
+64,27.3,3,Lap Chole,80,85,0,0
+61,29.8,2,Lap Chole,192,44,0,0
+52,27,3,Lap Chole,112,158,0,0
+61,37.6,3,Appendectomy,69,49,0,0
+58,33.2,3,Lap Chole,86,188,0,0
+55,21.6,3,Gastrectomy,105,71,0,0
+44,39.5,2,Lap Chole,74,127,1,0
+70,33.5,3,Hernia Repair,60,282,0,0
+35,19.2,3,Colectomy,75,169,0,0
+59,18.3,1,Lap Chole,135,219,0,0
+77,27.7,2,Hernia Repair,136,110,0,0
+60,41.1,3,Colectomy,198,86,0,0
+62,29.9,5,Gastrectomy,67,99,0,1
+74,23,1,Gastrectomy,95,205,0,1
+83,28.7,4,Hernia Repair,101,208,0,0
+58,27.7,3,Lap Chole,78,92,0,0
+35,18,2,Gastrectomy,95,99,0,0
+31,33.8,4,Appendectomy,71,130,0,0
+51,26.7,3,Appendectomy,86,73,0,0
+39,28.5,3,Hernia Repair,78,40,1,0
+36,25.1,1,Hernia Repair,108,161,0,0
+67,27.5,4,Colectomy,131,65,0,0
+78,25.3,1,Hernia Repair,76,108,0,0
+40,28.7,3,Colectomy,110,234,0,0
+69,29.3,3,Lap Chole,79,39,0,0
+62,28,4,Appendectomy,42,197,0,0
+46,26,3,Hernia Repair,84,163,0,1
+76,18.3,4,Lap Chole,107,168,1,0
+54,28.9,3,Gastrectomy,234,149,0,0
+79,34.1,3,Lap Chole,218,156,0,0
+66,36.5,4,Colectomy,224,255,0,1
+80,29.4,2,Lap Chole,83,228,0,0
+68,24.8,3,Appendectomy,76,72,0,0
+70,30.3,1,Hernia Repair,89,218,0,0
+40,30.1,2,Colectomy,69,330,0,0
+33,28.4,2,Lap Chole,83,55,0,0
+51,26.6,4,Lap Chole,69,58,0,0
+69,20.2,3,Hernia Repair,95,107,0,1
+70,31.3,3,Lap Chole,88,63,0,0
+60,30.7,3,Hernia Repair,60,35,0,0
+68,28.3,2,Lap Chole,59,55,0,0
+46,35.3,4,Colectomy,66,31,0,0
+44,30.4,3,Lap Chole,182,32,1,0
+51,22.5,2,Hernia Repair,93,46,1,0
+61,31.3,2,Lap Chole,52,85,0,0
+54,28.6,4,Colectomy,158,65,0,0
+52,29.6,2,Colectomy,89,135,0,0
+42,26.8,2,Lap Chole,81,57,0,0
+90,32.3,3,Gastrectomy,93,148,0,0
+83,23.4,3,Colectomy,79,127,0,0
+39,28.7,2,Hernia Repair,83,50,1,0
+41,30.6,3,Colectomy,47,123,1,0
+84,25.9,4,Lap Chole,82,65,0,0
+69,37.2,2,Lap Chole,183,124,0,0
+78,29.1,2,Colectomy,95,42,0,0
+61,21.1,3,Colectomy,165,76,0,0
+65,26.3,1,Hernia Repair,105,256,0,0
+76,21.9,3,Hernia Repair,117,111,0,0
+51,28.9,2,Lap Chole,89,39,0,0
+68,30.7,4,Lap Chole,97,117,0,0
+71,21.9,5,Colectomy,62,72,0,0
+57,25.8,1,Colectomy,74,137,0,0
+52,27,3,Colectomy,102,61,0,0
+46,30.2,3,Appendectomy,71,151,1,0
+68,15.2,4,Gastrectomy,83,164,0,0
+72,20.2,4,Appendectomy,58,158,1,0
+53,21.4,5,Colectomy,106,169,0,0
+66,29.7,5,Colectomy,52,211,0,0
+84,30.4,3,Lap Chole,177,105,0,0
+69,30.6,2,Appendectomy,96,110,1,0
+54,25.5,5,Lap Chole,90,94,0,0
+64,30.9,4,Lap Chole,105,116,0,0
+46,27,2,Hernia Repair,149,113,0,0
+40,26.3,2,Colectomy,138,97,0,0
+52,28,1,Hernia Repair,96,77,1,0
+81,27.6,3,Colectomy,86,382,0,0
+52,23.9,2,Lap Chole,52,48,0,0
+73,35.3,2,Hernia Repair,57,40,0,0
+66,34.3,3,Gastrectomy,73,68,0,0
+62,20.4,1,Lap Chole,45,163,0,0
+65,27.6,3,Hernia Repair,89,71,0,0
+53,32.1,1,Lap Chole,77,72,0,0
+70,23.7,4,Appendectomy,81,94,0,0
+44,29.9,1,Colectomy,146,176,1,0
+63,33.4,3,Lap Chole,103,39,0,0
+63,36.2,4,Gastrectomy,62,140,0,0
+62,25.5,2,Appendectomy,83,41,0,0
+51,24,2,Hernia Repair,56,104,1,0
+38,36.1,2,Hernia Repair,103,159,0,0
+70,29.1,4,Lap Chole,128,101,0,0
+59,26.8,3,Colectomy,119,148,1,0
+71,28.3,4,Lap Chole,101,150,0,1
+48,21.5,3,Hernia Repair,54,112,1,0
+44,28.8,2,Lap Chole,149,206,0,0
+66,26.2,3,Hernia Repair,107,26,1,0
+86,29.5,4,Appendectomy,68,62,0,0
+64,25.7,4,Lap Chole,151,124,0,0
+58,27,2,Hernia Repair,94,167,0,0
+63,27.2,2,Appendectomy,86,186,0,0
+48,18.2,5,Colectomy,160,150,0,0
+55,25.1,3,Gastrectomy,75,71,0,0
+62,30,3,Lap Chole,71,96,1,0
+59,26.7,2,Gastrectomy,66,130,1,0
+59,31.4,5,Appendectomy,105,51,0,0
+56,18.8,3,Hernia Repair,71,165,0,0
+67,32.8,3,Hernia Repair,100,238,1,0
+40,31.1,3,Appendectomy,34,97,0,0
+65,30,4,Lap Chole,142,194,0,0
+32,25.7,2,Lap Chole,99,73,0,0
+64,22.2,3,Colectomy,118,36,0,0
+66,26.8,3,Colectomy,79,208,1,0
+77,21.1,3,Lap Chole,34,84,1,0
+44,24.9,3,Appendectomy,118,69,0,0
+66,19.3,2,Appendectomy,170,293,0,1
+75,28.7,3,Appendectomy,81,240,0,0
+72,27.3,2,Hernia Repair,41,210,0,0
+58,22.7,3,Lap Chole,80,196,0,0
+66,32.6,4,Lap Chole,82,220,1,0
+46,19.8,2,Colectomy,70,99,0,0
+50,34.2,5,Colectomy,94,127,0,0
+64,28.8,5,Gastrectomy,88,54,0,0
+57,26.9,4,Colectomy,68,44,0,0
+51,32.3,2,Lap Chole,73,181,0,0
+63,31.6,5,Lap Chole,78,46,0,0
+78,25.2,3,Colectomy,52,83,0,0
+75,30.8,2,Colectomy,149,94,0,0
+61,29.7,3,Colectomy,136,202,0,0
+59,28.1,4,Appendectomy,67,195,0,0
+44,32.9,3,Hernia Repair,83,50,0,0
+68,30.9,2,Gastrectomy,232,35,0,0
+77,22.8,2,Lap Chole,66,64,1,1
+51,31.2,4,Colectomy,50,64,0,0
+37,17.8,3,Colectomy,67,45,0,0
+68,20.1,1,Hernia Repair,69,167,1,0
+64,27.6,2,Lap Chole,136,36,0,0
+79,25.8,2,Colectomy,215,67,0,0
+59,31.3,2,Hernia Repair,125,135,0,0
+48,28.2,4,Lap Chole,141,48,0,0
+27,27.2,3,Hernia Repair,67,33,0,0
+65,31.5,2,Lap Chole,48,398,0,0
+67,27.9,4,Hernia Repair,59,122,1,0
+61,21.5,3,Colectomy,48,119,0,0
+53,27.2,2,Hernia Repair,142,182,0,0
+62,29.4,3,Hernia Repair,125,85,0,0
+65,23.2,2,Gastrectomy,64,644,0,0
+31,21,5,Appendectomy,122,62,0,0
+67,20.2,2,Lap Chole,88,84,1,0
+54,28.8,5,Hernia Repair,139,19,0,0
+70,33.7,3,Lap Chole,129,226,0,0
+34,25,4,Colectomy,160,117,0,0
+34,26.3,3,Hernia Repair,118,259,0,0
+61,25.5,3,Lap Chole,134,93,0,0
+87,34.8,2,Appendectomy,223,36,0,1
+49,28.3,2,Lap Chole,101,256,0,0
+60,23.1,2,Hernia Repair,114,55,1,1
+63,29.4,2,Appendectomy,123,296,0,0
+45,23.7,2,Colectomy,54,217,1,0
+55,28.4,4,Lap Chole,152,67,0,0
+84,25.5,3,Hernia Repair,100,94,0,0
+85,31.7,3,Lap Chole,107,46,0,0
+66,27.7,3,Lap Chole,41,17,0,0
+85,31.3,4,Appendectomy,83,84,0,1
+57,23.4,3,Hernia Repair,149,60,0,0
+76,29.6,2,Hernia Repair,82,300,0,0
+90,24.7,3,Colectomy,91,109,0,0
+48,21.3,3,Hernia Repair,115,278,0,0
+54,37,3,Lap Chole,65,145,0,0
+69,33.7,2,Lap Chole,65,122,0,0
+61,24.4,4,Appendectomy,199,49,0,0
+62,26.6,2,Lap Chole,79,34,1,0
+49,26,3,Gastrectomy,126,123,0,1
+70,23.2,4,Hernia Repair,116,61,0,0
+65,31.3,3,Colectomy,117,236,0,0
+44,29.2,1,Lap Chole,115,167,0,0
+64,19.7,2,Hernia Repair,172,20,0,0
+68,27.7,3,Gastrectomy,102,134,0,0
+41,25,3,Hernia Repair,86,137,0,0
+45,29.8,3,Lap Chole,102,113,0,0
+54,29.4,2,Colectomy,101,75,1,0
+34,22.8,3,Appendectomy,30,101,0,0
+52,29.4,4,Hernia Repair,201,338,0,0
+48,23.9,1,Lap Chole,46,154,0,0
+71,28.5,2,Colectomy,33,219,0,0
+55,22.2,2,Hernia Repair,72,127,0,0
+52,20.8,3,Appendectomy,122,200,0,0
+65,26.9,2,Lap Chole,70,103,0,0
+55,24.3,2,Appendectomy,124,162,1,1
+58,18.9,4,Appendectomy,153,68,0,0
+45,27.9,3,Lap Chole,68,124,0,0
+64,32.3,3,Lap Chole,131,196,0,0
+37,28.5,3,Appendectomy,79,281,0,0
+70,25.4,3,Hernia Repair,62,44,1,0
+69,28.1,3,Hernia Repair,101,99,0,0
+80,22.7,1,Hernia Repair,150,65,0,0
+46,23.1,2,Lap Chole,80,109,0,0
+72,36.8,4,Lap Chole,58,272,1,0
+72,31.4,2,Hernia Repair,146,403,0,0
+42,29.8,1,Colectomy,51,124,0,0
+56,25.2,2,Hernia Repair,183,150,0,0
+60,21.5,3,Lap Chole,43,70,0,0
+71,29.1,1,Gastrectomy,120,98,0,0
+81,25,3,Lap Chole,136,27,0,0
+42,28,4,Appendectomy,53,446,1,0
+80,28.6,3,Colectomy,53,126,0,0
+59,27.5,3,Hernia Repair,62,264,0,0
+68,26.2,3,Colectomy,56,220,0,0
+51,26.6,3,Lap Chole,50,28,0,0
+65,32.6,4,Hernia Repair,69,261,0,0
+70,24.9,2,Colectomy,61,191,0,0
+41,18,4,Hernia Repair,127,67,0,0
+48,31.4,1,Lap Chole,77,180,1,0
+39,25.7,3,Lap Chole,85,72,0,0
+45,31.1,3,Appendectomy,117,73,0,0
+80,22.7,3,Colectomy,69,115,0,0
+58,32.8,3,Lap Chole,92,85,0,0
+68,24.6,3,Appendectomy,139,44,1,1
+49,25,3,Gastrectomy,69,96,0,0
+41,27.7,1,Gastrectomy,57,151,0,0
+57,24.5,4,Lap Chole,85,144,0,0
+67,28,4,Lap Chole,92,74,0,1
+43,27.2,3,Hernia Repair,62,82,0,0
+65,23.5,3,Hernia Repair,152,114,0,0
+44,22.2,3,Appendectomy,109,130,0,0
+51,30.5,3,Gastrectomy,66,428,0,0
+42,19.4,3,Gastrectomy,170,48,0,0
+89,28.4,3,Lap Chole,93,410,0,0
+68,37.5,4,Appendectomy,172,139,0,0
+65,23.5,3,Colectomy,85,113,0,0
+49,29.4,2,Lap Chole,80,83,0,0
+18,19.4,3,Hernia Repair,108,152,0,0
+67,23.1,2,Appendectomy,132,34,0,0
+54,29.7,1,Lap Chole,118,45,0,0
+34,25.2,1,Lap Chole,118,38,0,0
+42,29.6,2,Lap Chole,99,71,0,0
+47,25.9,3,Lap Chole,76,79,1,0
+85,25.9,4,Colectomy,98,264,0,0
+70,24.4,4,Hernia Repair,70,47,0,0
+64,33.3,5,Colectomy,109,89,0,1
+62,36.3,1,Colectomy,71,57,0,0
+75,22.6,2,Gastrectomy,163,77,0,0
+58,22.2,4,Lap Chole,76,102,0,1
+79,25.7,4,Appendectomy,96,128,0,0
+72,25.6,1,Colectomy,101,63,1,0
+42,26.2,4,Colectomy,35,81,0,0
+18,24.3,5,Hernia Repair,123,302,0,0
+74,31.8,3,Appendectomy,92,146,0,0
+53,25.1,3,Lap Chole,80,53,0,0
+76,28.6,3,Hernia Repair,74,130,0,0
+53,30.3,4,Hernia Repair,49,64,1,0
+70,21.7,3,Hernia Repair,297,141,1,1
+90,26.7,2,Lap Chole,108,44,0,0
+80,22,3,Colectomy,26,108,0,0
+75,23.4,2,Gastrectomy,42,106,0,0
+51,27.9,4,Hernia Repair,99,88,0,0
+68,26.1,2,Colectomy,106,52,1,0
+55,25.5,3,Colectomy,76,78,0,0
+42,20,4,Lap Chole,39,67,0,0
+72,30.3,3,Colectomy,110,44,1,0
+48,27.5,5,Lap Chole,89,100,0,0
+74,26.5,1,Appendectomy,218,165,1,0
+56,29.8,3,Lap Chole,96,206,0,0
+50,15.4,2,Colectomy,133,252,0,0
+63,26,3,Lap Chole,105,135,0,0
+50,30.3,3,Lap Chole,55,35,0,0
+67,23.8,2,Colectomy,96,335,0,0
+47,26.8,3,Hernia Repair,47,94,0,1
+87,25.3,3,Hernia Repair,98,80,0,0
+59,32.2,4,Hernia Repair,69,91,0,0
+42,28,3,Lap Chole,39,204,0,0
+60,26.8,2,Colectomy,70,72,0,0
+90,23.1,3,Lap Chole,100,56,0,0
+83,28.8,4,Hernia Repair,174,281,0,1
+50,21,3,Lap Chole,64,124,0,0
+78,31.8,2,Hernia Repair,59,532,0,0
+53,25.1,1,Gastrectomy,113,206,0,0
+25,25.9,2,Colectomy,123,65,0,0
+81,26.2,2,Hernia Repair,89,135,0,0
+52,21,4,Colectomy,59,76,0,0
+38,29.1,3,Appendectomy,52,68,1,0
+77,28.1,3,Colectomy,48,47,0,0
+74,30.6,3,Appendectomy,70,51,0,0
+66,16.7,3,Colectomy,121,64,0,0
+58,21.4,2,Appendectomy,134,93,0,0
+65,30.8,4,Colectomy,87,48,1,0
+66,24.4,2,Lap Chole,78,106,0,0
+50,33.6,3,Appendectomy,100,63,0,0
+56,23.9,2,Appendectomy,97,58,0,0
+77,21.7,1,Lap Chole,76,256,0,0
+63,24.6,1,Appendectomy,32,91,0,0
+55,33.5,1,Appendectomy,53,247,1,0
+52,33.1,4,Appendectomy,76,276,0,0
+55,28.1,3,Appendectomy,83,82,0,0
+58,21.4,5,Colectomy,111,177,0,0
+65,29.6,1,Gastrectomy,135,63,1,0
+53,25.3,2,Appendectomy,82,106,0,0
+62,26.3,2,Lap Chole,168,503,0,1
+74,24.9,2,Colectomy,53,359,0,0
+38,27.1,1,Lap Chole,191,214,0,0
+57,24.7,3,Colectomy,99,125,1,0
+64,32.9,3,Colectomy,73,90,0,0
+44,28.7,2,Colectomy,61,28,0,0
+71,26,3,Appendectomy,74,81,0,0
+39,31.5,5,Lap Chole,119,37,1,0
+50,20.6,2,Hernia Repair,83,79,0,0
+39,24.8,3,Hernia Repair,66,58,0,0
+47,20.3,3,Colectomy,103,77,0,0
+48,15.2,3,Appendectomy,141,247,0,0
+79,18.7,4,Colectomy,127,108,0,0
+72,24.5,2,Appendectomy,75,32,0,0
+59,40.7,4,Appendectomy,107,143,0,0
+62,22.9,3,Appendectomy,129,30,0,0
+71,30.7,4,Appendectomy,135,139,0,0
+83,20.2,3,Hernia Repair,58,207,0,0
+66,38.9,1,Lap Chole,64,105,0,0
+63,31,2,Lap Chole,35,141,0,0
+66,24.2,3,Lap Chole,74,95,0,0
+36,29.5,3,Appendectomy,66,60,1,0
+53,29.8,2,Gastrectomy,51,96,0,0
+90,23.1,3,Lap Chole,102,87,0,0
+61,28.7,4,Lap Chole,80,163,0,0
+51,26.9,4,Hernia Repair,79,422,0,0
+66,29.5,2,Hernia Repair,104,25,0,0
+36,26,4,Colectomy,62,232,0,0
+38,32.5,3,Lap Chole,74,93,0,0
+42,35.3,3,Gastrectomy,171,84,0,0
+63,28.5,2,Hernia Repair,68,121,0,0
+57,24.1,4,Appendectomy,92,33,0,0
+90,25.5,3,Hernia Repair,87,103,0,0
+67,22,3,Lap Chole,89,75,0,0
+34,26.1,3,Gastrectomy,108,60,0,0
+73,22.5,2,Lap Chole,48,140,1,0
+50,23.6,3,Appendectomy,149,26,0,0
+57,23.2,2,Hernia Repair,116,67,1,0
+74,22.9,4,Colectomy,32,123,0,0
+78,33.7,2,Lap Chole,68,170,0,0
+35,27.3,2,Hernia Repair,91,128,0,0
+84,27.6,2,Lap Chole,61,216,0,0
+64,28.4,4,Gastrectomy,88,53,1,1

@@ -1,0 +1,256 @@
+---
+title: 'Complication Risk Model: SDSC Analytic Pitch'
+author: "Walker Blackston, MSPH"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: false
+    toc_float: false
+    number_sections: false
+    df_print: paged
+    theme: readable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(broom)
+library(pROC)
+library(caret)
+library(randomForest)
+library(ggpubr)
+library(knitr)
+library(dplyr)
+library(gtsummary)
+```
+
+# Background 
+
+To demonstrate how I think through surgical outcome prediction, I built a transparent prototype risk model for 30-day complications based on simulated surgical data.
+
+## Data Summary
+
+```{r data}
+df <- read_csv("~/Desktop/Research/SDSC-analytic-pitch/data/simulated_surgical_data.csv")
+df <- df %>%
+  mutate(Complication_30d = factor(Complication_30d, levels = c(0,1),
+                                   labels = c("No Complication", "Complication")))
+
+# Create a summary table using only key numeric variables
+table_summary_nums <- df %>%
+  select(Complication_30d, Age, BMI, Surgery_Duration_Minutes, Estimated_Blood_Loss) %>%
+  tbl_summary(
+    by = Complication_30d,
+    statistic = all_continuous() ~ "{mean} ({sd})",
+    digits = all_continuous() ~ 2,
+    missing = "no"
+  ) %>%
+  add_p() %>%  # adds p-values for group differences
+  modify_header(label = "**Variable**") %>% 
+  modify_caption("**Table: Summary Statistics by 30-Day Complication Status**")
+
+# Print the table
+table_summary_nums
+
+# Create a summary table for Procedure_Type grouped by 30-day complication status
+tbl_procedure_cats <- df %>%
+  select(Complication_30d, Procedure_Type, Intraoperative_Events, ASA_Class) %>%
+  tbl_summary(
+    by = Complication_30d,
+    statistic = all_categorical() ~ "{n} ({p}%)",
+    missing = "no"
+  ) %>%
+  add_p() %>%
+  modify_header(label = "**Procedure Type**") %>%
+  modify_caption("**Table: Procedure Type Distribution by 30-Day Complication Status**")
+
+# Display the table
+tbl_procedure_cats
+
+```
+
+# Exploring the data
+
+```{r EDA}
+sdsccolors <- c("No Complication" = "lightgreen", "Complication" = "lightblue")
+
+# Plot 1: Age distribution by complication status
+p1 <- ggplot(df, aes(x = Complication_30d, y = Age, fill = Complication_30d)) +
+  geom_boxplot() +
+  scale_fill_manual(values = sdsccolors) +
+  labs(title = "Age Distribution by 30-Day Complication Status",
+       x = "Complication Status", y = "Age") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Plot 2: BMI distribution by complication status
+p2 <- ggplot(df, aes(x = Complication_30d, y = BMI, fill = Complication_30d)) +
+  geom_boxplot() +
+  scale_fill_manual(values = sdsccolors) +
+  labs(title = "BMI Distribution by 30-Day Complication Status",
+       x = "Complication Status", y = "BMI") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Plot 3: Procedure Type distribution by complication status
+p3 <- ggplot(df, aes(x = Procedure_Type, fill = Complication_30d)) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual(values = sdsccolors) +
+  labs(title = "Procedure Type Distribution by 30-Day Complication Status",
+       x = "Procedure Type", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Plot 4: Surgery Duration vs. Estimated Blood Loss colored by complication status
+p4 <- ggplot(df, aes(x = Surgery_Duration_Minutes, y = Estimated_Blood_Loss, color = Complication_30d)) +
+  geom_point(alpha = 0.7) +
+  scale_color_manual(values = c("lightgreen", "blue")) +
+  labs(title = "Surgery Duration vs. Estimated Blood Loss",
+       x = "Surgery Duration (Minutes)", y = "Estimated Blood Loss (mL)") +
+  theme_minimal()
+
+# Step 1: Create rows
+row1 <- ggarrange(p1, p2, ncol = 2, labels = c("A", "B"), align = "hv", common.legend = FALSE)
+row2 <- ggarrange(p3, p4, ncol = 2, labels = c("C", "D"), align = "hv", common.legend = TRUE)
+
+# Step 2: Combine rows vertically
+final_plot <- ggarrange(row1, row2, ncol = 1, heights = c(1, 1.2))
+
+# Display the final plot grid
+final_plot
+```
+
+## Logistic Model
+
+```{r log mod 1}
+train_index <- createDataPartition(df$Complication_30d, p = 0.8, list = FALSE)
+train <- df[train_index, ]
+test <- df[-train_index, ]
+
+log_model <- glm(Complication_30d ~ ., data = train, family = "binomial")
+tidy_log <- tidy(log_model, exponentiate = TRUE, conf.int = TRUE)
+
+odds_plot <- tidy_log %>%
+  filter(term != "(Intercept)") %>%
+  ggplot(aes(x = reorder(term, estimate), y = estimate)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = conf.low, ymax = conf.high), width = 0.2) +
+  # Add a dashed horizontal line at OR=1, which becomes vertical after flipping:
+  geom_hline(yintercept = 1, linetype = "dashed") +
+  coord_flip() +
+  labs(title = "Odds Ratios", x = "Variable", y = "OR (95% CI)") +
+  theme_minimal()
+
+odds_plot
+```
+
+## Machine Learning Model
+
+```{r ml mod}
+rf_model <- randomForest(Complication_30d ~ ., data = train, ntree = 500, importance = TRUE)
+
+test$log_pred_prob <- predict(log_model, newdata = test, type = "response")
+test$rf_pred_prob <- predict(rf_model, newdata = test, type = "prob")[, 2]
+
+roc_log <- roc(as.numeric(test$Complication_30d), test$log_pred_prob)
+roc_rf <- roc(as.numeric(test$Complication_30d), test$rf_pred_prob)
+
+roc_plot <-
+  ggroc(list(Logistic = roc_log, RandomForest = roc_rf)) +
+  ggtitle("ROC Curve Comparison") +
+  scale_colour_manual(values = c("lightgreen", "lightblue")) +
+  theme_minimal()
+
+roc_plot
+```
+
+## Results
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+auc_log <- auc(roc_log)
+auc_rf <- auc(roc_rf)
+```
+
+The model achieved an `r paste("AUC (Logistic):", round(auc_log, 2))` and `r paste("AUC(RandomForest):", round(auc_rf, 2))`, respectively with higher odds of complication associated with:
+
+-   Advanced age
+-   Higher ASA class
+-   Intraoperative events
+
+## Accuracy and Interpretation
+
+```{r model comp}
+# Convert predictions to match the factor levels of test$Complication_30d
+test$log_pred_class <- ifelse(test$log_pred_prob > 0.5, "Complication", "No Complication") %>% 
+  factor(levels = c("No Complication", "Complication"))
+
+# For random forest, ensure the prediction levels match as well (if necessary)
+test$rf_pred_class <- predict(rf_model, newdata = test)
+
+# Compute confusion matrices with matching factor levels
+conf_matrix_log <- confusionMatrix(test$log_pred_class, test$Complication_30d)
+conf_matrix_rf <- confusionMatrix(test$rf_pred_class, test$Complication_30d)
+
+#conf_matrix_log
+#conf_matrix_rf
+
+
+library(knitr)
+library(kableExtra)
+
+# ----- For Logistic Regression ----- #
+
+# Compute confusion matrix (assumes factor levels have been fixed)
+cm_log <- confusionMatrix(test$log_pred_class, test$Complication_30d)
+
+# 1. Neatly format the raw confusion matrix counts
+conf_table_log <- as.data.frame.matrix(cm_log$table)
+conf_table_log <- tibble::rownames_to_column(conf_table_log, var = "Prediction \\ Reference")
+
+# Display the raw confusion matrix table
+kable(conf_table_log, caption = "Confusion Matrix (Logistic Regression)", align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+# 2. Format overall performance metrics
+overall_stats_log <- as.data.frame(t(cm_log$overall))
+kable(overall_stats_log, digits = 2,
+      caption = "Overall Performance Metrics (Logistic Regression)",
+      align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+# 3. Format class-specific metrics (byClass)
+byClass_stats_log <- as.data.frame(t(cm_log$byClass))
+kable(byClass_stats_log, digits = 2,
+      caption = "Class-Specific Performance Metrics (Logistic Regression)",
+      align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+# ----- For Random Forest Model (optional) ----- #
+
+cm_rf <- confusionMatrix(test$rf_pred_class, test$Complication_30d)
+
+# Raw confusion matrix counts
+conf_table_rf <- as.data.frame.matrix(cm_rf$table)
+conf_table_rf <- tibble::rownames_to_column(conf_table_rf, var = "Prediction \\ Reference")
+kable(conf_table_rf, caption = "Confusion Matrix (Random Forest)", align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+# Overall performance metrics
+overall_stats_rf <- as.data.frame(t(cm_rf$overall))
+kable(overall_stats_rf, digits = 2,
+      caption = "Overall Performance Metrics (Random Forest)",
+      align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+# Class-specific performance metrics
+byClass_stats_rf <- as.data.frame(t(cm_rf$byClass))
+kable(byClass_stats_rf, digits = 2,
+      caption = "Class-Specific Performance Metrics (Random Forest)",
+      align = "c") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+## Next Steps
+
+This model demonstrates early potential to extract explainable risk signals from surgical outcomes data. If advanced with real-world video and procedural metadata, the insights could power a live surgeon feedback loop or benchmark dashboard.
