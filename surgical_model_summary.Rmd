@@ -3,6 +3,8 @@ title: 'Complication Risk Model: SDSC Analytic Pitch'
 author: "Walker Blackston, MSPH"
 date: "`r Sys.Date()`"
 output:
+  pdf_document:
+    toc: false
   html_document:
     toc: false
     toc_float: false
@@ -26,7 +28,9 @@ library(gtsummary)
 
 # Background 
 
-To demonstrate how I think through surgical outcome prediction, I built a transparent prototype risk model for 30-day complications based on simulated surgical data.
+To demonstrate how I think through surgical outcome prediction and statistical problems, I built a prototype risk model for 30-day complications based on simulated surgical data.
+
+In this hypothetical dataset of 1,000 patients, we sought to compare predictors of complications at 30-days follow up from surgery. We simulated a variety of demographic and clinical variables based on seeds of real-world data and expected distributions in a random sample of patients. The following brief will highlight steps in the analysis, modeling and interpretation of findings. A full printout of code used to generate data and this document are available in the Github provided in my pitch.
 
 ## Data Summary
 
@@ -78,7 +82,7 @@ sdsccolors <- c("No Complication" = "lightgreen", "Complication" = "lightblue")
 p1 <- ggplot(df, aes(x = Complication_30d, y = Age, fill = Complication_30d)) +
   geom_boxplot() +
   scale_fill_manual(values = sdsccolors) +
-  labs(title = "Age Distribution by 30-Day Complication Status",
+  labs(title = "Age Distribution",
        x = "Complication Status", y = "Age") +
   theme_minimal() +
   theme(legend.position = "none")
@@ -87,7 +91,7 @@ p1 <- ggplot(df, aes(x = Complication_30d, y = Age, fill = Complication_30d)) +
 p2 <- ggplot(df, aes(x = Complication_30d, y = BMI, fill = Complication_30d)) +
   geom_boxplot() +
   scale_fill_manual(values = sdsccolors) +
-  labs(title = "BMI Distribution by 30-Day Complication Status",
+  labs(title = "BMI Distribution",
        x = "Complication Status", y = "BMI") +
   theme_minimal() +
   theme(legend.position = "none")
@@ -96,7 +100,7 @@ p2 <- ggplot(df, aes(x = Complication_30d, y = BMI, fill = Complication_30d)) +
 p3 <- ggplot(df, aes(x = Procedure_Type, fill = Complication_30d)) +
   geom_bar(position = "dodge") +
   scale_fill_manual(values = sdsccolors) +
-  labs(title = "Procedure Type Distribution by 30-Day Complication Status",
+  labs(title = "Procedure Type",
        x = "Procedure Type", y = "Count") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -105,13 +109,14 @@ p3 <- ggplot(df, aes(x = Procedure_Type, fill = Complication_30d)) +
 p4 <- ggplot(df, aes(x = Surgery_Duration_Minutes, y = Estimated_Blood_Loss, color = Complication_30d)) +
   geom_point(alpha = 0.7) +
   scale_color_manual(values = c("lightgreen", "blue")) +
-  labs(title = "Surgery Duration vs. Estimated Blood Loss",
-       x = "Surgery Duration (Minutes)", y = "Estimated Blood Loss (mL)") +
+  labs(x = "Surgery Duration (Minutes)", y = "Estimated Blood Loss (mL)") +
   theme_minimal()
 
 # Step 1: Create rows
-row1 <- ggarrange(p1, p2, ncol = 2, labels = c("A", "B"), align = "hv", common.legend = FALSE)
-row2 <- ggarrange(p3, p4, ncol = 2, labels = c("C", "D"), align = "hv", common.legend = TRUE)
+row1 <- ggarrange(p1, p2, ncol = 2, labels = c("A", "B"), align = "hv",
+                  common.legend = FALSE)
+row2 <- ggarrange(p3, p4, ncol = 2, labels = c("C", "D"), align = "hv",
+                  common.legend = TRUE)
 
 # Step 2: Combine rows vertically
 final_plot <- ggarrange(row1, row2, ncol = 1, heights = c(1, 1.2))
@@ -120,9 +125,11 @@ final_plot <- ggarrange(row1, row2, ncol = 1, heights = c(1, 1.2))
 final_plot
 ```
 
+# Predictive Modeling
+
 ## Logistic Model
 
-```{r log mod 1}
+```{r log mod 1, cache=FALSE}
 train_index <- createDataPartition(df$Complication_30d, p = 0.8, list = FALSE)
 train <- df[train_index, ]
 test <- df[-train_index, ]
@@ -144,10 +151,10 @@ odds_plot <- tidy_log %>%
 odds_plot
 ```
 
-## Machine Learning Model
+## Machine Learning Model (Random Forest)
 
-```{r ml mod}
-rf_model <- randomForest(Complication_30d ~ ., data = train, ntree = 500, importance = TRUE)
+```{r ml mod, cache=FALSE}
+rf_model <- randomForest(Complication_30d ~ ., data = train, ntree = 700, importance = TRUE)
 
 test$log_pred_prob <- predict(log_model, newdata = test, type = "response")
 test$rf_pred_prob <- predict(rf_model, newdata = test, type = "prob")[, 2]
@@ -171,11 +178,10 @@ auc_log <- auc(roc_log)
 auc_rf <- auc(roc_rf)
 ```
 
-The model achieved an `r paste("AUC (Logistic):", round(auc_log, 2))` and `r paste("AUC(RandomForest):", round(auc_rf, 2))`, respectively with higher odds of complication associated with:
+The model achieved an `r paste("AUC (Logistic):", round(auc_log, 2))` and `r paste("AUC(RandomForest):", round(auc_rf, 2))`, respectively with higher odds of complication associated only with:
 
 -   Advanced age
--   Higher ASA class
--   Intraoperative events
+-   Intra-operative events
 
 ## Accuracy and Interpretation
 
@@ -193,8 +199,6 @@ conf_matrix_rf <- confusionMatrix(test$rf_pred_class, test$Complication_30d)
 
 #conf_matrix_log
 #conf_matrix_rf
-
-
 library(knitr)
 library(kableExtra)
 
