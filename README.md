@@ -12,7 +12,6 @@ This project demonstrates how I would approach high-impact, explainable modeling
 -   ✅ **Logistic regression model** with clear odds ratios and confidence intervals
 -   ✅ **Random forest model** for ML comparison
 -   ✅ **ROC curve comparison** and confusion matrices
--   ✅ Clean, presentable 1-pager summary
 
 ------------------------------------------------------------------------
 
