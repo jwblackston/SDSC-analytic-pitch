@@ -37,7 +37,7 @@ This project demonstrates how I would approach high-impact, explainable modeling
 
 ## 📄 Full 1-Page Summary Report
 
-👉 [View the full interactive report (HTML)](surgical_model_summary.html)
+👉 [View the full interactive report (PDF)](surgical_model_summary.pdf)
 
 ------------------------------------------------------------------------
 
