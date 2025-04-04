@@ -66,12 +66,16 @@ tbl_procedure_cats <- df %>%
   ) %>%
   add_p() %>%
   modify_header(label = "**Procedure Type**") %>%
-  modify_caption("**Table: Procedure Type Distribution by 30-Day Complication Status**")
+  modify_caption("**Table: Procedure, Events and ASA class by 30-Day Complication Status**")
 
 # Display the table
 tbl_procedure_cats
 
 ```
+
+These data suggest relatively balanced groups for those with and without complications within 30 days post-op, except that those experiencing complications are more likely to be older (*p* \< .001), experience a longer surgery (*p* \< .01) and experience intra-operative events (*p* \< .01).
+
+Visualizing these data can help us understand these relationships more clearly.
 
 # Exploring the data
 
@@ -129,6 +133,8 @@ final_plot
 
 ## Logistic Model
 
+In order to best predict post-op complications, we want to build a series of robust, interpretable models. Often prediction can come at the expense of interpretability, so in this case we first want to build an explainable logistic model and evaluate what variables most contribute to increased risk of complication.
+
 ```{r log mod 1, cache=FALSE}
 train_index <- createDataPartition(df$Complication_30d, p = 0.8, list = FALSE)
 train <- df[train_index, ]
@@ -150,6 +156,8 @@ odds_plot <- tidy_log %>%
 
 odds_plot
 ```
+
+While important to analyze output and diagnostics of the models (below), visual inspection of Odds Ratios (ORs) can provide useful information for the most important variables driving our outcome of interest. Here, as only age and the presence of an intra-operative event were significant positive predictors of complications. We can determine this simply and visually by assessing which plots and their standard error *do not* cross the reference line where OR = 1.
 
 ## Machine Learning Model (Random Forest)
 

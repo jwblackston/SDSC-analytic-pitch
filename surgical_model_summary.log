@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.4)  4 APR 2025 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.4)  4 APR 2025 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,51 +608,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--152
 <surgical_model_summary_files/figure-latex/EDA-1.pdf, id=4, 469.755pt x 325.215pt>
 File: surgical_model_summary_files/figure-latex/EDA-1.pdf Graphic file (type pdf)
 <use surgical_model_summary_files/figure-latex/EDA-1.pdf>
-Package pdftex.def Info: surgical_model_summary_files/figure-latex/EDA-1.pdf  used on input line 157.
+Package pdftex.def Info: surgical_model_summary_files/figure-latex/EDA-1.pdf  used on input line 166.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
 
 [1{/Users/walker.blackston/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
 
 ]
-Overfull \vbox (22.58618pt too high) has occurred while \output is active []
-
-
 
 [2 <./surgical_model_summary_files/figure-latex/EDA-1.pdf>]
-<surgical_model_summary_files/figure-latex/log mod 1-1.pdf, id=34, 469.755pt x 325.215pt>
+<surgical_model_summary_files/figure-latex/log mod 1-1.pdf, id=35, 469.755pt x 325.215pt>
 File: surgical_model_summary_files/figure-latex/log mod 1-1.pdf Graphic file (type pdf)
 <use surgical_model_summary_files/figure-latex/log mod 1-1.pdf>
-Package pdftex.def Info: surgical_model_summary_files/figure-latex/log mod 1-1.pdf  used on input line 163.
+Package pdftex.def Info: surgical_model_summary_files/figure-latex/log mod 1-1.pdf  used on input line 178.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<surgical_model_summary_files/figure-latex/ml mod-1.pdf, id=35, 469.755pt x 325.215pt>
+<surgical_model_summary_files/figure-latex/ml mod-1.pdf, id=36, 469.755pt x 325.215pt>
 File: surgical_model_summary_files/figure-latex/ml mod-1.pdf Graphic file (type pdf)
 <use surgical_model_summary_files/figure-latex/ml mod-1.pdf>
-Package pdftex.def Info: surgical_model_summary_files/figure-latex/ml mod-1.pdf  used on input line 168.
+Package pdftex.def Info: surgical_model_summary_files/figure-latex/ml mod-1.pdf  used on input line 191.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
 
 [3 <./surgical_model_summary_files/figure-latex/log mod 1-1.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 178.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 201.
 (/Users/walker.blackston/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (20.16289pt too wide) in alignment at lines 196--203
+Overfull \hbox (20.16289pt too wide) in alignment at lines 219--226
  [] [] [] [] [] [] [] 
  []
 
 [4{/Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./surgical_model_summary_files/figure-latex/ml mod-1.pdf>]
-Overfull \hbox (261.33046pt too wide) in alignment at lines 205--212
+Overfull \hbox (261.33046pt too wide) in alignment at lines 228--235
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (20.16289pt too wide) in alignment at lines 224--231
+Overfull \hbox (20.16289pt too wide) in alignment at lines 247--254
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (261.33046pt too wide) in alignment at lines 233--240
+Overfull \hbox (261.33046pt too wide) in alignment at lines 256--263
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -668,18 +665,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14164 strings out of 475171
- 228320 string characters out of 5764414
- 636635 words of memory out of 5000000
- 36905 multiletter control sequences out of 15000+600000
- 600581 words of font info for 64 fonts, out of 8000000 for 9000
+ 14166 strings out of 475171
+ 228343 string characters out of 5764414
+ 636639 words of memory out of 5000000
+ 36906 multiletter control sequences out of 15000+600000
+ 604844 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  89i,13n,93p,554b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri8.pfb>
-Output written on surgical_model_summary.pdf (5 pages, 235596 bytes).
+</Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/walker.blackston/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri8.pfb>
+Output written on surgical_model_summary.pdf (5 pages, 248409 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 141 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
