@@ -50,7 +50,7 @@ If advanced with real surgical video data, this framework could: - Benchmark per
 ## 🧑‍💻 Author
 
 Walker Blackston\
-[GitHub](https://github.com/jwblackston) · [LinkedIn](https://www.linkedin.com/in/walkerblackston) · [Email](mailto:walker.blackston@gmail.com)
+[GitHub](https://github.com/jwblackston) · [LinkedIn](https://www.linkedin.com/in/j-blackston-msph/) · [Email](mailto:blackstonjw@icloud.com)
 
 ------------------------------------------------------------------------
 
